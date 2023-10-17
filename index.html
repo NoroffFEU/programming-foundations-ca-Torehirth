@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programming Foundations CA</title>
-    <link href='css/style.css' rel='stylesheet' />
-    <link rel='icon' href='data:;base64,=' />
-</head>
-
-<body>
-
-    <script src="js/script.js"></script>
-</body>
-
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=" />
+    <script defer src="js/car.js"></script>
+  </head>
+  <body>
+    <section>
+      <h1>My car</h1>
+    </section>
+    <section class="brandcontainer">
+      <h2 class="type" id="brand">brand</h2>
+      <h2 class="type" id="model">model</h2>
+    </section>
+    <hr />
+    <section class="specscontainer">
+      <div>
+        <h3>HUD</h3>
+        <ul class="enginespecscontainer">
+          <li id="engine">Engine:</li>
+          <li id="revs">Revs:</li>
+          <li id="speed">Speed:</li>
+          <li id="km">Odometer:</li>
+        </ul>
+      </div>
+      <hr />
+      <div class="ignitionbtncontainer">
+        <p id="ignitionstatus">Ignition OFF</p>
+        <button class="ignitionbtn" id="ignitionbtn">Start</button>
+      </div>
+      <hr />
+      <div>
+        <h3>Gearbox</h3>
+        <ul class="gearscontainer">
+          <li id="currentgear">current gear:</li>
+          <li id="gearratio">gear ratio:</li>
+        </ul>
+      </div>
+      <div class="gearbtncontainer">
+        <button id="park">park</button>
+        <button id="gear1">1. gear</button>
+        <button id="gear2">2. gear</button>
+        <button id="gear3">3. gear</button>
+        <button id="gear4">4. gear</button>
+        <button id="gear5">5. gear</button>
+        <button id="gear6">6. gear</button>
+        <button id="neutral">neutral</button>
+        <button id="revers">revers</button>
+      </div>
+    </section>
+  </body>
 </html>

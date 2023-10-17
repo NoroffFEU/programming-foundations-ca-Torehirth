@@ -1,4 +1,158 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
 body {
-	font-family: sans-serif;
-	padding: 1em 3em;
+  height: 100vh;
+  max-width: 100%;
+  background-image: url(../images/aleksei-sabulevskii-WWL_6yW4274-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0 3rem 0;
+  color: lightgreen;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+li,
+p {
+  font-size: 1rem;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin-inline: 50px;
+}
+
+.brandcontainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  color: aqua;
+  padding-bottom: 2em;
+  margin-inline: auto;
+}
+
+.specscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  padding-top: 2em;
+  color: lightgreen;
+  text-transform: capitalize;
+}
+
+.specscontainer h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.gearscontainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  margin: auto;
+  padding-inline: 20px;
+  max-width: fit-content;
+}
+
+.enginespecscontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: lightgreen;
+}
+
+.enginespecscontainer li {
+  display: flex;
+  text-transform: none;
+}
+
+.ignitionbtncontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.ignitionbtncontainer p {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px;
+  border: 2px solid aqua;
+  color: orange;
+}
+.ignitionbtn {
+  padding: 32px 8px;
+  border-radius: 100%;
+  background-color: transparent;
+  color: orange;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: red 0px 0px 5px 4px;
+  text-shadow: black 2px 2px 4px;
+  cursor: pointer;
+  max-width: fit-content;
+}
+.ignitionbtn:hover,
+.ignitionbtn:active {
+  box-shadow: aqua 0px 0px 5px 6px;
+}
+
+.gearbtncontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  max-width: fit-content;
+  margin-inline: auto;
+  padding-bottom: 0px;
+}
+
+.gearbtncontainer button {
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: transparent;
+  text-transform: capitalize;
+  color: orange;
+  border-color: aqua;
+  box-shadow: aqua 1px 1px 4px;
+}
+
+.gearbtncontainer button:hover {
+  box-shadow: lightgreen 1px 1px 4px 2px;
 }
